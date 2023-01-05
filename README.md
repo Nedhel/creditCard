@@ -1,2 +1,2 @@
-# creditCard
+# creditcard
 A credit Card model
