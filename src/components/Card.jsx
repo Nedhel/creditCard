@@ -1,9 +1,9 @@
 import '../styles/Card.css'
 import chip from '../assets/chip.png'
-export function Card(){
+export function Card({cvv}){
     return(
         <div className="cardContainer">
-            <div className='card'>
+            <div className={cvv===0?'card':'card active'}>
                 <div className="side front">
                     <div className='title'>
                         <h2 className='bankName'>Tu Banco</h2>
@@ -22,7 +22,7 @@ export function Card(){
                     <div className='magneticLine'></div>
                     <div className='signContainer'>
                         <div className='signSpace'></div>
-                        <div className='cvv'></div>
+                        <div className='cvv'>{cvv===0?'':cvv}</div>
                     </div>
                     <p className='info'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel porttitor diam. Etiam accumsan malesuada libero, egestas accumsan arcu vestibulum ut.</p>
                 </div>
