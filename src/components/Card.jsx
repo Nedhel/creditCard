@@ -22,7 +22,7 @@ export function Card({cvv}){
                     <div className='magneticLine'></div>
                     <div className='signContainer'>
                         <div className='signSpace'></div>
-                        <div className='cvv'>{cvv===0?'':cvv}</div>
+                        <input type='text' className='cvv' value={cvv===0?'':cvv} disabled></input>
                     </div>
                     <p className='info'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel porttitor diam. Etiam accumsan malesuada libero, egestas accumsan arcu vestibulum ut.</p>
                 </div>
